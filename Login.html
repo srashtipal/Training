@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;/*border higlight after clicking inside box*/
+            border-radius: 5px;
+        }
+
+        span {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .forgot-password {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        button {
+            width: 100%; /*button wisth*/
+            padding: 10px; /*padding*/
+            background-color: #4faa47;/*visibilty of color brfore clicking*/
+            color: white;/*text color */
+            border: none;/*border not needed*/
+            border-radius: 5px;/*radius*/
+            cursor: pointer;/*Moving cursor*/
+            font-size: 16px;/*font size*/
+        }
+
+        button:hover {
+            background-color: #5474a7;/*pointing cursor over button*/
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Login</h1>
+        <form>
+            <label for="email">Enter Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password">
+
+            <span>
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </span>
+
+            <br><br>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+
+</body>
+</html>
